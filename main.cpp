@@ -12,7 +12,7 @@ public:
   // Take the money method
   int takeTheMoney(int redisue) {
     if (balance < 0 || redisue > balance) {
-      cout << "Insufficient funds for card" << endl;
+      cout << "Insufficient funds for withdrawal" << endl;
       return balance;
     }
 
@@ -39,6 +39,7 @@ public:
 
     balance -= redisue;
     second_balance.balance += redisue;
+    cout << "\nTransferred " << redisue << " to the other account!" << endl;
   }
 };
 
