@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+// Class Bank
 class BankAccount {
 private:
   int balance;
